@@ -1,0 +1,708 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.navbar {
+    .navbar-nav {
+        margin-left: auto;
+
+        .nav-link {
+            font-family: Poppins;
+            font-weight: normal;
+            font-size: 16px;
+            color: #c2c2c2;
+        }
+    }
+
+    margin-bottom: 30px;
+}
+
+.profile {
+    .profileText {
+        align-self: center;
+
+        h1 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+
+            .blinking-cursor {
+                user-select: none;
+                animation: blink 1s steps(2, start) infinite;
+
+                @keyframes blink {
+                    to {
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+
+        p {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            color: #535353;
+        }
+
+        .logo {
+            margin-top: 21px;
+
+            img {
+                margin-top: 10px;
+                margin-left: 20px;
+                width: 20px;
+                height: 20px;
+            }
+
+            .btn-contact {
+                width: 140px;
+                height: 40px;
+                text-align: center;
+
+                .bi {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .profilefoto {
+        img {
+            width: 400px;
+            float: right;
+        }
+    }
+}
+
+.portodesain {
+    margin-top: 70px;
+    margin-bottom: 20px;
+
+    p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        text-align: justify;
+        font-size: 16px;
+        color: #535353;
+    }
+
+    img {
+        width: 402px;
+        height: 268px;
+    }
+
+    .logodesain {
+        img {
+            margin-top: 10px;
+            margin-left: 20px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .btn-contact {
+            width: 158px;
+            height: 40px;
+            text-align: left;
+            font-size: 14px;
+        }
+    }
+}
+
+.portofolio {
+    margin-top: 40px;
+
+    h1 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        color: #ffd369;
+    }
+
+    .porto1 {
+        margin-top: 20px;
+    }
+
+    .porto2 {
+        margin-top: 40px;
+    }
+
+    .link {
+        justify-content: center;
+        margin-top: 10px;
+
+        a {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            text-decoration: none;
+            color: #000000;
+
+            &:hover {
+                color: #C2C2C2;
+            }
+
+        }
+    }
+
+    .btn {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #C4C4C4;
+    }
+}
+
+.pengalaman {
+    margin-top: 30px;
+
+    h1 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 44px;
+        color: #ffd369;
+        margin-top: 50px;
+    }
+
+    .card {
+        margin-top: 30px;
+
+        .card-title {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 28px;
+            color: #000000;
+        }
+
+        .card-subtitle {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            color: #9E9E9E;
+        }
+
+        .card-text {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #000000;
+        }
+    }
+
+    .btn {
+        margin-top: 10px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #C4C4C4;
+    }
+}
+
+.sertifikat {
+    margin-top: 30px;
+
+    h1 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 44px;
+        color: #ffd369;
+    }
+
+    img {
+        margin-top: 40px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #C4C4C4;
+    }
+
+    .btn {
+        margin-top: 30px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #C4C4C4;
+    }
+}
+
+// Halaman portoflio
+.portoweb {
+    h1 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        color: #ffd369;
+    }
+
+    .link {
+        margin-top: 10px;
+
+        a {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            text-decoration: none;
+
+            color: #C2C2C2;
+
+            &:hover {
+                color: #000000;
+            }
+
+        }
+    }
+
+    .linkweb {
+        a {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            text-decoration: none;
+
+            &:hover {
+                color: #000000 !important;
+            }
+        }
+    }
+
+}
+
+.web1 {
+
+    .tools{
+        width: 50px;
+        height: 30px;
+    }
+
+    .carousel {
+        position: relative;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+    }
+
+    #carousel-thumbs {
+        background: rgba(255, 255, 255, .3);
+        bottom: 0;
+        left: 0;
+        padding: 0 50px;
+        right: 0;
+    }
+
+    #carousel-thumbs img {
+        border: 5px solid transparent;
+        cursor: pointer;
+    }
+
+    #carousel-thumbs img:hover {
+        border-color: rgba(255, 255, 255, .3);
+    }
+
+    #carousel-thumbs .selected img {
+        border-color: #fff;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 50px;
+    }
+
+    @media all and (max-width: 767px) {
+        .carousel-container #carousel-thumbs img {
+            border-width: 3px;
+        }
+    }
+
+    @media all and (min-width: 576px) {
+        .carousel-container #carousel-thumbs {
+            position: absolute;
+        }
+    }
+
+    @media all and (max-width: 576px) {
+        .carousel-container #carousel-thumbs {
+            background: #ccccce;
+        }
+    }
+
+    #backlink {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        text-decoration: none;
+        color: #c2c2c2;
+
+        &:hover {
+            color: #ffca4f;
+        }
+    }
+
+    h1 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        color: #000000;
+    }
+
+    p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #666666;
+    }
+
+    #textdesc {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #000000;
+    }
+
+    a {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #FFD369;
+        text-decoration: none;
+
+        &:hover {
+            color: #ffca4f;
+        }
+
+    }
+}
+
+#footerr {
+    margin-top: 10%;
+}
+
+
+
+footer {
+    margin-top: 50px;
+    background-color: #EFEFEF;
+}
+
+@media (max-width: 575.98px) {
+
+    #btn-back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+    }
+
+    .navbar {
+        .navbar-nav {
+            margin-left: auto;
+
+            .nav-link {
+                font-family: Poppins;
+                font-weight: normal;
+                font-size: 16px;
+                color: #c2c2c2;
+            }
+        }
+    }
+
+    .profile {
+        .profileText {
+            h1 {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 30px;
+
+                .blinking-cursor {
+                    user-select: none;
+                    animation: blink 1s steps(2, start) infinite;
+
+                    @keyframes blink {
+                        to {
+                            visibility: hidden;
+                        }
+                    }
+                }
+            }
+
+            p {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                color: #535353;
+            }
+
+            .logo {
+                img {
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    width: 20px;
+                    height: 20px;
+                }
+
+                .btn-contact {
+                    width: 150px;
+                    height: 40px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .profilefoto {
+            img {
+                width: 400px;
+                float: right;
+            }
+        }
+    }
+
+    .portofolio {
+        margin-top: 30px;
+
+        h1 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 44px;
+            color: #ffd369;
+        }
+
+        .porto1 {
+            margin-top: 40px;
+        }
+
+        .porto2 {
+            margin-top: 40px;
+        }
+
+        .link {
+            justify-content: center;
+            margin-top: 10px;
+
+            a {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 21px;
+                text-decoration: none;
+                color: #000000;
+
+                &:hover {
+                    color: #C2C2C2;
+                }
+
+            }
+        }
+
+        .btn {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #C4C4C4;
+        }
+    }
+
+    .pengalaman {
+        margin-top: 30px;
+
+        h1 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 44px;
+            color: #ffd369;
+        }
+
+        .card {
+            margin-top: 40px;
+
+            .card-title {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 28px;
+                color: #000000;
+            }
+
+            .card-subtitle {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                color: #9E9E9E;
+            }
+
+            .card-text {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                color: #000000;
+            }
+        }
+
+        .btn {
+            margin-top: 10px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #C4C4C4;
+        }
+    }
+
+    .sertifikat {
+        margin-top: 30px;
+
+        h1 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 44px;
+            color: #ffd369;
+        }
+
+        img {
+            margin-top: 40px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #C4C4C4;
+        }
+
+        .btn {
+            margin-top: 30px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #C4C4C4;
+        }
+    }
+
+    .portodesain {
+        margin-top: 20px;
+
+        p {
+            margin-top: 30px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            color: #535353;
+        }
+
+        .logodesain {
+            img {
+                margin-top: 10px;
+                margin-left: 20px;
+                width: 20px;
+                height: 20px;
+            }
+
+            .btn-contact {
+                width: 158px;
+                height: 40px;
+                text-align: left;
+                font-size: 14px;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 50px;
+        background-color: #EFEFEF;
+    }
+
+    .portoweb {
+        h1 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 35px;
+            color: #ffd369;
+        }
+
+        .link {
+            margin-top: 10px;
+
+            a {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                margin-left: 50px;
+                text-decoration: none;
+
+                color: #C2C2C2;
+
+                &:hover {
+                    color: #000000;
+                }
+
+            }
+        }
+
+        .linkweb {
+            a {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                text-decoration: none;
+
+                &:hover {
+                    color: #000000 !important;
+                }
+            }
+        }
+
+    }
+
+
+
+    #footerr {
+        margin-top: 30%;
+    }
+}
